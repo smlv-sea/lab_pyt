@@ -34,6 +34,9 @@ def plot (x, y):
     plt.xlabel("x label")
     plt.ylabel("y label")
     plt.savefig("График 4.png")
+    plt.axis('equal')  
+    plt.grid(True)
+    plt.tight_layout()
 
 
 name = "fig 4.txt"

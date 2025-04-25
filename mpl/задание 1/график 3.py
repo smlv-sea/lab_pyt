@@ -12,7 +12,7 @@ x1 = [42, 188, 61, 61]
 y1 = [0, 2, 19, -18]
 
 # Форма пространства и сам график
-plt.figure(figsize=(5, 2))
+plt.figure(figsize=(12, 6))
 plt.scatter(x1,y1, label='fig.3', color='black')
 
 # Название осей
@@ -24,6 +24,9 @@ plt.title("Number of points: 4")
 
 # Нарисуем легенду
 plt.legend()
+plt.axis('equal')  
+plt.grid(True)
+plt.tight_layout()
 
 # Задаёт количество точек на оси
 plt.locator_params(axis='y', nbins=5)

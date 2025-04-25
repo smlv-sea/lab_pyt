@@ -29,12 +29,15 @@ def read_file(name):
                           
        
 def plot (x, y):
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(12, 6))
     plt.scatter(x, y, color='pink')
     plt.title("Number of points: 1000", size=15)
     plt.xlabel("x label")
     plt.ylabel("y label")
     plt.savefig("График 5.png")
+    plt.axis('equal')  
+    plt.grid(True)
+    plt.tight_layout()
 
 
 name = "fig 5.txt"
